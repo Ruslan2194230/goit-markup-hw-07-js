@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <a href="./index.html" class="header-container__logo">
+          <span class="header-container__logo-web">Web</span>
+          <span class="header-container__logo-studio">Studio</span>
+        </a>
+
+        <ul class="header-container__list">
+          <li class="header-container__item">
+            <a href="./index.html" class="header-container__link">Студия</a>
+          </li>
+          <li class="header-container__item">
+            <a href="./portfolio.html" class="header-container__link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="header-container__item">
+            <a href="./contacts.html" class="header-container__link"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+        <ul class="top-contacts">
+          <li class="top-contacts__item">
+            <a href="info@example.com" class="top-contacts__link"
+              ><svg class="top-contacts__icon">
+                <use href="./images/symbol-defs.svg#icon-mail-image"></use></svg
+              >info@eaxample.com</a
+            >
+          </li>
+          <li class="top-contacts__item">
+            <a href="tel:380957515962" class="top-contacts__link"
+              ><svg class="icon-instagrams top-contacts__icon">
+                <use
+                  href="./images/symbol-defs.svg#icon-mobile-image"
+                ></use></svg
+              >+380960656565</a
+            >
+          </li>
+        </ul>
+
+        <!-- <div> -->
+        <button type="button" class="burger-menu__button" data-modal-open>
+          <svg class="burger-menu__icon">
+            <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        <!-- </div> -->
+
+        <div
+          class="modals-menu__backdrop is-hidden"
+       
+          autocomplete="off"
+          data-modal
+        >
+          <div class="burger-menu__modal">
+            <button
+              type="button"
+              class="burger-menu__button-cross"
+              data-modal-close
+            >
+              <svg class="burger-menu__cross-icon">
+                <use href="./images/symbol-defs.svg#icon-close_24px"></use>
+              </svg>
+            </button>
+
+            <ul class="header-container__list burger-menu__nav-list">
+              <li class="header-container__item burger-menu__nav-item">
+                <a
+                  href="./index.html"
+                  class="header-container__link burger-menu__nav-link"
+                  >Студия</a
+                >
+              </li>
+              <li class="header-container__item burger-menu__nav-item">
+                <a
+                  href="./portfolio.html"
+                  class="header-container__link burger-menu__nav-link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-container__item burger-menu__nav-item">
+                <a
+                  href="./contacts.html"
+                  class="header-container__link burger-menu__nav-link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+
+            <ul class="burger-menu__contacts-list">
+              <li class="burger-menu__contacts-item">
+                <a
+                  href="tel:380957515962"
+                  class="burger-menu__contacts-link burger-menu__number"
+                  >+380960656565</a
+                >
+              </li>
+              <li class="burger-menu__contacts-item">
+                <a
+                  href="info@example.com"
+                  class="burger-menu__contacts-link burger-menu__mail"
+                >
+                  info@eaxample.com</a
+                >
+              </li>
+            </ul>
+            <ul class="burger-menu__social-links-list">
+              <li class="burger-menu__social-links-item">
+                <a href="" class="burger-menu__social-links-link">Instagram</a>
+              </li>
+              <li class="burger-menu__social-links-item">
+                <a href="" class="burger-menu__social-links-link">Twitter</a>
+              </li>
+              <li class="burger-menu__social-links-item">
+                <a href="" class="burger-menu__social-links-link">Facebook</a>
+              </li>
+              <li class="burger-menu__social-links-item">
+                <a
+                  href=""
+                  class="burger-menu__social-links-link burger-menu__linkedin"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <section class="hero">
+      <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+      <button class="hero__button" data-modal-open>Заказать услугу</button>
+      <form class="hero-form is-hidden" autocomplete="off" data-modal>
+        <button class="hero-form__button-cross">
+          <svg>
+            <use href="./images/symbol-defs.svg#icon-cross_form"></use>
+          </svg>
+        </button>
+          <h3 class="hero-form__header">
+            Оставьте свои данные,мы вам перезвоним
+          </h3>
+          <div class="hero-form__field">
+            <input
+              type="text"
+              class="hero-form__input"
+              name="name"
+              id="name"
+              placeholder="Микола Игоревич"
+            />
+            <svg class="hero-form__icons">
+              <use href="./images/symbol-defs.svg#icon-person_form"></use>
+            </svg>
+            <label for="name" class="hero-form__label">Имя</label>
+          </div>
+          <div class="hero-form__field">
+            <input
+              type="tel"
+              class="hero-form__input"
+              name="name"
+              id="tel"
+              placeholder="380963696395"
+            />
+            <svg class="hero-form__icons">
+              <use href="./images/symbol-defs.svg#icon-telephone_form"></use>
+            </svg>
+            <label for="tel" class="hero-form__label">Телефон</label>
+          </div>
+          <div class="hero-form__field">
+            <input
+              type="text"
+              id="mail"
+              class="hero-form__input"
+              name="name"
+              placeholder="ufc@dana-white.com"
+            />
+            <svg class="hero-form__icons">
+              <use href="./images/symbol-defs.svg#icon-mail_form"></use>
+            </svg>
+            <label for="mail" class="hero-form__label">Поча</label>
+          </div>
+          <div class="hero-form__field">
+            <textarea
+              class="hero-form__input comment"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Бла бла бла"
+            ></textarea>
+            <label for="comment" class="hero-form__label">Комментарий</label>
+          </div>
+          <div class="hero-form__field">
+            <input type="checkbox" name="" value="" id="agree" />
+            <label for="agree">Соглашаюсь с рассылкой и принимаю</label>
+            <a href="" class="agree-link">Условия договора</a>
+          </div>
+          <button class="hero-form__button-send" type="submit" data-modal-close>
+            Отправить
+          </button>
+        
+      </form>
+    </section> -->
+    <section class="hero">
+      <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+      <button type="button" class="hero__button" babadata-modal-open>
+        Заказать услугу
+      </button>
+      <div
+        class="modals-menu__backdrop babais-hidden"
+        babadata-modal
+        autocomplete="off"
+      >
+        <form class="hero-form">
+          <!-- <form class="hero-form babais-hidden"  babadata-modal> -->
+          <button class="hero-form__button-cross">
+            <svg class="hero-form__button-cross-icon">
+              <use href="./images/sprite/symbol-defs.svg#icon-cross_form"></use>
+            </svg>
+          </button>
+          <h3 class="hero-form__header">
+            Оставьте свои данные,мы вам перезвоним
+          </h3>
+          <div class="hero-form__field">
+            <input
+              type="text"
+              class="hero-form__input"
+              name="name"
+              id="name"
+              placeholder="Микола Ігорович"
+            />
+            <svg class="hero-form__icons">
+              <use
+                href="./images/sprite/symbol-defs.svg#icon-person_form"
+              ></use>
+            </svg>
+            <label class="hero-form__label" for="name">Имя</label>
+          </div>
+          <div class="hero-form__field">
+            <input
+              type="tel"
+              class="hero-form__input"
+              name="name"
+              id="tel"
+              placeholder="+380963696395"
+            />
+            <svg class="hero-form__icons">
+              <use
+                href="./images/sprite/symbol-defs.svg#icon-telephone_form"
+              ></use>
+            </svg>
+            <label class="hero-form__label" for="tel">Телефон</label>
+          </div>
+          <div class="hero-form__field">
+            <input
+              type="text"
+              class="hero-form__input"
+              name="name"
+              id="mail"
+              placeholder="UFC@dana_white.com"
+            />
+            <svg class="hero-form__icons">
+              <use href="./images/sprite/symbol-defs.svg#icon-mail_form"></use>
+            </svg>
+            <label class="hero-form__label" for="name">Почта</label>
+          </div>
+          <div class="hero-form__field">
+            <textarea
+              class="hero-form__input comment"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Ислам мазачев новый чемпион"
+            ></textarea>
+            <label class="hero-form__label" for="comment">Комментарий</label>
+          </div>
+          <div class="hero-form__field">
+            <input type="checkbox" name="" value="" id="agree" />
+            <label for="agree">Соглашаюсь с рассылкой и принимаю</label>
+            <a href="" class="agree-link">Условия договора</a>
+          </div>
+          <button
+            class="hero-form__button-send"
+            type="submit"
+            babadata-modal-close
+          >
+            Отправить
+          </button>
+        </form>
+      </div>
+    </section>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
