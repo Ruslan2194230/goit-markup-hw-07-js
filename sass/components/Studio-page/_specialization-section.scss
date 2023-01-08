@@ -1,0 +1,43 @@
+
+
+
+.specialization__section {
+ 
+  padding: 0px 215px;
+
+  @media screen and (max-width: 1600px) {
+    display: none;
+  }
+}
+.specialization__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.specialization__item {
+  position: relative;
+}
+
+.specialization__title {
+  @extend%h2-text-styles;
+}
+
+.specialization__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0px, 225px);
+
+  width: 370px;
+  height: 70px;
+
+  display: flex;
+  @extend%center_flex-position;
+
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+// .specialization__description-text{
+
+// }

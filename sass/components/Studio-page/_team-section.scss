@@ -1,0 +1,112 @@
+.team__section {
+
+  background-color: #f5f4fa;
+
+  @media screen and(min-width:480px) {
+    width: 480px;
+    padding:$mobile-and-tablet-section-padding;
+  }
+  @media screen and(min-width:768px) {
+    width: 768px;
+    padding: $mobile-and-tablet-section-padding;
+  }
+  @media screen and(min-width:1600px) {
+    width: 1600px;
+    margin-top: 94px;
+    padding: 94px 215px;
+  }
+}
+.team__title {
+  @extend%h2-text-styles;
+}
+.team__list {
+  @media screen and(min-width:768px) {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.team__card {
+  display: flex;
+  @extend%center_flex-position;
+  flex-direction: column;
+
+  width: 450px;
+  height: 622px;
+
+  margin-top: 30px;
+  padding-bottom: 24px;
+
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+  }
+  @media screen and (min-width:1600px) {
+    width: 270px;
+    height: auto;
+  }
+}
+
+.team__foto {
+  width: 450px;
+  height: 460px;
+  @media screen and (min-width: 768px) {
+    // width: 354px;
+    // height: 374px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+/////да,это не совсем как надо,надо исправить)
+.team__name {
+  margin-top: 30px;
+
+  @extend%h4-font-styles;
+}
+.team__post {
+  margin-top: 10px;
+
+  @extend%h5-font-styles;
+}
+.social-links__list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 206px;
+  height: 44px;
+
+  margin-top: 16px;
+}
+.social-links__item {
+  display: flex;
+  @extend%center_flex-position;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:hover .social-links__icon,
+  &:focus .social-links__icon,
+  &:active .social-links__icon {
+    fill: $white-color;
+    background-color: #2196f3;
+  }
+}
+.social-links__link {
+  line-height: 0.9;
+  //////////////////////Кастыль,не знаю как сделать избегая асбослютного позиционирования
+}
+.social-links__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: $main-icon-gray-color;
+}

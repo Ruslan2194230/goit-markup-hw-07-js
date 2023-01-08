@@ -1,0 +1,136 @@
+.footer {
+  display: flex;
+  @extend%center_flex-position;
+  flex-direction: column;
+
+  width: 480px;
+
+  padding: $mobile-and-tablet-section-padding;
+
+  background-color: $footer-background-color;
+  color: $footer-color;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: row;
+
+    width: 1600px;
+    padding: 60px 215px;
+  }
+}
+.footer__container {
+  display: flex;
+  @extend%center_flex-position;
+  flex-direction: column;
+
+  color: $white-color;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 165px;
+  }
+  @media screen and (min-width: 1600px) {
+    gap: 70px;
+  }
+}
+.footer__contacts-list {
+  display: flex;
+  @extend%center_flex-position;
+  flex-direction: column;
+
+  color: $footer-link-color;
+}
+
+.footer-adress {
+  margin-top: 20px;
+  color: $white-color;
+}
+.footer__logo {
+  width: 154px;
+  height: 28px;
+
+  @extend%logo-styles;
+}
+
+.footer__logo-studio {
+  color: $white-color;
+}
+/////div join-us
+.join-us {
+  text-align: center;
+}
+.footer-social-links__list {
+  margin-top: 20px;
+}
+
+.footer-social-links__item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-links__icon {
+  fill: $white-color;
+}
+/////Subscription-container
+.subscription-container {
+  margin-top: 60px;
+
+  @media screen and (min-width: 1600px) {
+    margin-top: 0px;
+    margin-left: 93px;
+  }
+}
+.subscription-container__form {
+  display: flex;
+  @extend%center_flex-position;
+  flex-direction: column;
+
+  @media screen and (min-width: 1600px) {
+    flex-direction: row;
+
+    gap: 15px;
+  }
+}
+.subscription-container__text {
+  @extend%h3-font-styles;
+  text-align: center;
+}
+.subscription-container__input {
+  width: 450px;
+  height: 50px;
+
+  margin-top: 20px;
+
+  color: #ffffff;
+  background-color: $footer-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  @media screen and (min-width: 1600px) {
+    width: 358px;
+  }
+}
+
+.subscription-container__button {
+  @extend%button-style;
+
+  width: 200px;
+
+  margin-top: 20px;
+  padding: 0;
+
+  font-size: 16px;
+
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+
+.subscription-container__icon {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}

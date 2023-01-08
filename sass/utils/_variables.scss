@@ -1,0 +1,143 @@
+///ddk
+/// 
+
+$mobile-and-tablet-section-padding:60px 15px;
+$desctop-section-margin-top:94px;
+$desctop-section-padding:94px 215px;
+
+
+
+// Цвета:
+// Просто цвета
+$white-color: #ffffff;
+$blue-color: #2196f3;
+
+
+
+// Цвета текста
+$text-white-color: #ffffff;
+$text-blue-color: #2196f3;
+
+$main-gray-color: #757575;
+$main-icon-gray-color: #afb1b8;
+
+$hover-color: #2196f3;
+
+// Баттон
+$button-background-color: #2196f3;
+$button-color: #ffffff;
+%button-style {
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  background-color: #2196f3;
+  color: #ffffff;
+
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+///Стили логотипа
+%logo-styles {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2196f3;
+}
+// Футер
+$footer-color: #ffffff;
+$footer-background-color: #2f303a;
+$footer-link-color: #afb1b8;
+
+// Размеры
+%form-icons-size {
+  width: 18px;
+  height: 18px;
+}
+/////Свойства флекса
+%center_flex-position {
+  justify-content: center;
+  align-items: center;
+}
+
+// Font styles
+%h2-text-styles {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  @media screen and (min-width: 1600px) {
+    font-size: 36px;
+  }
+}
+
+%h3-font-styles {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+%h4-font-styles {
+  font-weight: 500;
+  font-size: 16px;
+}
+%h5-font-styles {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+}
+%h6-font-styles{
+  font-weight: 700;
+  font-size: 18px;
+}
+%portfolio-nav-font-styles{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+%burger-font-styles {
+  font-weight: 500;
+  font-size: 40px;
+}
+// ANIMATION PLACEHOLDERS
+%hover-underline-block {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 5px;
+    background-color: $blue-color;
+
+    transform: scaleX(0);
+    transition: 250ms;
+  }
+}
+%hover-underline-block-animation {
+  &:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+%hover-active-focus-blue {
+  &:hover,
+  &:active {
+    color: $hover-color;
+    fill: $hover-color;
+  }
+}
+// ANIMATION PLACEHOLDERS
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+body {
+  width: 100%;
+}

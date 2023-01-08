@@ -19,6 +19,7 @@
 const refs = {
   openModalBtn: document.querySelector("[babadata-modal-open]"),
   closeModalBtn: document.querySelector("[babadata-modal-close]"),
+
   modal: document.querySelector("[babadata-modal]"),
 };
 

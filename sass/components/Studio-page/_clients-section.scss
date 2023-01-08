@@ -1,0 +1,65 @@
+.clients__section {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding: $mobile-and-tablet-section-padding;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: $mobile-and-tablet-section-padding;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  
+    padding: 94px 215px;
+  }
+}
+.clients__title {
+  @extend%h2-text-styles;
+}
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  margin-top: 30px;
+}
+.clients__item {
+  width: 210px;
+  outline: 1px solid $main-gray-color;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:hover .clients__icon,
+  &:focus .clients__icon,
+  &:active .clients__icon {
+    outline-color: $hover-color;
+    fill: $hover-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 170px;
+    height: 92px;
+  }
+}
+.clients__icon {
+  width: 210px;
+  height: 92px;
+
+  fill: $main-icon-gray-color;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 170px;
+    height: 92px;
+  }
+}
